@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        document.getElementById("lazy-background").style.backgroundImage = "url('/../assets/bg.jpg')";
+    }, 500); 
+
     document.getElementById("form").addEventListener("submit", (e) => {
         e.preventDefault();
         let age = parseInt(document.getElementById("age").value.trim());
