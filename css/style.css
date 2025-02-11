@@ -99,6 +99,7 @@ form{
     color: white;
     display: none;
     font-size: 1rem;
+    animation: animateHeart 1s infinite;
 }
 
 .heart::before,
@@ -120,4 +121,13 @@ form{
 .heart::after {
     left: 50px;
     top: 0;
+}
+
+@keyframes animateHeart {
+    0%,100%{
+       transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1);
+    }
 }
