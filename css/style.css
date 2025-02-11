@@ -1,0 +1,123 @@
+body{
+    align-items: center;
+    display: flex;
+    align-items: center;
+     background-image: url(/assets/bg.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100svh;
+}
+
+h3{
+    font-style: oblique;
+     font-weight: 500;
+      background-color: azure;
+}
+
+.container{
+    margin: 100px auto;
+    box-shadow: 2px 2px 5px black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+
+    input[type=text]{
+        padding:5px;
+        width: 70%;
+        outline: none;
+    }
+   
+  
+   
+}
+
+#btn{
+    width: 40%;
+    align-self: center;
+    padding:5px;
+    outline: none;
+    border: 0;
+    background:black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px white;
+    margin-top: 10px;
+   transition: all 0.5s ease-in-out; 
+   font-size: 1.4rem;  
+}
+#btn:hover{
+    background: white;
+    color: black;
+    cursor: pointer
+}
+
+.display{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    width: 300px;
+    background:white;
+    padding:5px;
+    border: 10px;
+    min-height: 50px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+    border-radius: 20px;
+    border-radius: 0 180px;
+}
+
+@media (max-width:250px) {
+    #btn{
+        font-size: 1rem;
+        width: fit-content;
+    }
+    .display{
+        width: fit-content;
+    }
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: rotate(-45deg);
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    color: white;
+    display: none;
+    font-size: 1rem;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
