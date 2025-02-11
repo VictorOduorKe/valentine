@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (age >= 19 && age <= 25) {
             message = "This lady is at a good age for dating.";
         } else if (age >= 26 && age <= 34) {
-            message = "This lady is mature and responsible. Proceed with caution.";
+            message = "This lady is mature and responsible be cauteous.";
         } else {
             message = "Age is just a number, but compatibility matters more.";
         }
