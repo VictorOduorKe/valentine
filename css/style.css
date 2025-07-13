@@ -34,7 +34,7 @@ form{
     align-items: center;
 
     input[type=text]{
-        padding:5px;
+        padding:15px;
         width: 70%;
         outline: none;
     }
